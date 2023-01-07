@@ -161,7 +161,7 @@ class __xxx__:
                     'upgrade-insecure-requests': '1',
                     'user-agent': ua
                 }
-                r = session.get(f'https://mobile.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8', headers=header)
+                r = session.get('https://mobile.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8', headers=header)
                 das = {
                     "lsd":re.search('name="lsd" value="(.*?)"', str(r.text)).group(1),
                     "jazoest":re.search('name="jazoest" value="(.*?)"', str(r.text)).group(1),
